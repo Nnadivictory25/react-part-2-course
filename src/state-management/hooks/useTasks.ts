@@ -1,6 +1,6 @@
-import { useReducer } from "react";
-import tasksReducer from "../reducers/tasksReducer";
+import { useContext } from "react";
+import TasksContext from "../contexts/tasksContext";
 
-const useTasks = () => useReducer(tasksReducer, [])
+const useTasks = () => useContext(TasksContext)
 
 export default useTasks;
