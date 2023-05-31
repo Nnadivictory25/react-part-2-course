@@ -1,8 +1,7 @@
-import { useReducer, useState } from 'react';
-import authReducer from './reducers/authReducer';
+import useAuth from './hooks/useAuth';
 
 const LoginStatus = () => {
-	const [user, dispatch] = useReducer(authReducer, '');
+	const { user, dispatch } = useAuth();
 
 	if (user)
 		return (
