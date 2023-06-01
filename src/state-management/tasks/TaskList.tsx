@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import useAuth from '../hooks/useAuth';
+import useAuth from '../auth/useAuth';
 import TasksContext from './tasksContext';
 
 const useTasks = () => useContext(TasksContext);
@@ -16,7 +16,7 @@ const TaskList = () => {
 					dispatch({
 						type: 'ADD',
 						task: { id: Date.now(), title: 'Task ' + Date.now() },
-					})
+					}) 
 				}
 				className='btn btn-primary my-3'>
 				Add Task
