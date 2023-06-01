@@ -13,6 +13,7 @@ specifiers:
   react-dom: ^18.2.0
   typescript: ^4.9.3
   vite: ^4.2.0
+  zustand: ^4.3.8
 
 dependencies:
   '@popperjs/core': 2.11.7
@@ -22,6 +23,7 @@ dependencies:
   bootstrap: 5.2.3_@popperjs+core@2.11.7
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  zustand: 4.3.8_react@18.2.0
 
 devDependencies:
   '@types/react': 18.2.0
@@ -978,3 +980,19 @@ packages:
   /yallist/3.1.1:
     resolution: {integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==}
     dev: true
+
+  /zustand/4.3.8_react@18.2.0:
+    resolution: {integrity: sha512-4h28KCkHg5ii/wcFFJ5Fp+k1J3gJoasaIbppdgZFO4BPJnsNxL0mQXBSFgOgAdCdBj35aDTPvdAJReTMntFPGg==}
+    engines: {node: '>=12.7.0'}
+    peerDependencies:
+      immer: '>=9.0'
+      react: '>=16.8'
+    peerDependenciesMeta:
+      immer:
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      react: 18.2.0
+      use-sync-external-store: 1.2.0_react@18.2.0
+    dev: false
